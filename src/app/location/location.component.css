@@ -1,0 +1,20 @@
+
+.home{
+  background-color: rgb(255, 255, 225);
+
+}
+.NIS {
+    color: rgb(167, 167, 167);
+    background-image: linear-gradient(to right, rgb(248, 115, 115), rgb(255, 43, 43));
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  }
+  .home-banner {
+    margin-left: 10px;
+    color: rgb(255, 115, 64);
+    font-family: 'Ephesis', cursive;
+    font-weight: bolder;
+    font-size: 100px;
+  }
+  

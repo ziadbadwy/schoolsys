@@ -1,0 +1,73 @@
+.nav-link span{
+    display: none !important;
+}
+.bod{
+    background-color: rgb(255, 255, 210);
+    height: 110vh;
+  }
+  
+  .NIS {
+    color: rgb(167, 167, 167);
+    background-image: linear-gradient(to right, rgb(248, 115, 115), rgb(255, 43, 43));
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  }
+  
+  .home-banner {
+    margin-left: 10px;
+    color: rgb(255, 115, 64);
+    font-family: 'Ephesis', cursive;
+    font-weight: bolder;
+    font-size: 100px;
+  }
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+  }
+  .carousel-item{
+    justify-content: center;
+  }
+  @media(max-width:800px) {
+    .msa7a{
+      margin-top: 0px;
+   }
+   .msa7aa{
+    margin-top: 10px;
+  
+   }
+   .carousel-inner .carousel-item img {
+    height: 500px;
+  
+   }
+   .loc{
+     width:50% !important;
+   }
+  
+  }
+  @media(max-width:400px) {
+    .contanter{
+      width: 100%;
+    }
+    .carousel-inner .carousel-item img {
+      width: 100%;
+      margin-left: 20px !important;
+    }
+    .home{
+      height: 60vh;
+    }
+    .carousel-inner .carousel-item img {
+      height: 200px;
+    
+     }
+     .loc{
+       width: 70% !important;
+     }
+  }
+  @media(max-width:790px){
+    .nav-link span{
+        display: inline-block !important;
+    }
+  }
+  

@@ -1,0 +1,70 @@
+<nav class=" navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="home"><span class="NIS">NIS</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="mx-auto navbar-nav">
+      <li class="nav-item active">
+
+
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home"> <i style="font-size: 20px; margin-right: 20px;" class="fas fa-home"></i>
+          <span>Home</span> <span class="sr-only">(current)</span></a>
+      </li>
+      <!--//////////////-->
+      <li class="nav-item active">
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"> <i
+              style="font-size: 20px; margin-right: 20px;" class="fas fa-clipboard-list"></i>
+            <span>LIST</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/list-s"><i class="fas fa-user-graduate"></i> List Student</a>
+            <a class="dropdown-item" routerLink="/list-t"><i class="fas fa-user-tie"></i> List Teacher</a>
+            <a class="dropdown-item" routerLink="/list-table"><i class="fas fa-tasks"></i> List of Tables</a>
+          </div>
+        </div>
+      </li>
+      <!--//////////////-->
+      <li class="nav-item active">
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"> <i
+              style="font-size: 20px; margin-right: 20px;" class="fas fa-user-plus"></i>
+            <span>LIST</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/add-s"><i class="fas fa-user-graduate"></i> Add Student</a>
+            <a class="dropdown-item" routerLink="/add-t"><i class="fas fa-user-tie"></i> Add Teacher</a>
+            <a class="dropdown-item" routerLink="/add-table"><i class="fas fa-tasks"></i> Add Tables</a>
+          </div>
+        </div>
+      </li>
+
+      <!--///////-->
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/location"> <i style="font-size: 20px; margin-right: 20px;"
+            class="fas fa-map-marked-alt"></i>
+          <span>Our Location</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/chatAdmin"> <i style="font-size: 20px; margin-right: 20px;"
+            class="fas fa-comment-dots"></i>
+          <span>Your Chat's</span></a>
+      </li>
+
+      <li class="logout nav-item active">
+        <a class="nav-link" routerLink="/Login"> <i style=" font-size: 20px; margin-right: 20px;"
+            class="fas fa-sign-out-alt"></i>
+          <span>Logout</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

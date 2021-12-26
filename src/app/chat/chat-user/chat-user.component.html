@@ -1,0 +1,51 @@
+<!-- CHAT BAR BLOCK -->
+<app-nav-user></app-nav-user>
+
+<div class="home">
+  <h1 class=" text-center display-4">
+    <span class="NIS">CHAT</span> <span class="home-banner">with us</span>
+  </h1>
+  <div class="container col-md-6 mt-5">
+    <div class="chat-bar-collapsible mx-auto">
+      <div id="chat-button" class="collapsible">Chat with us! <i class="far fa-comments"></i>
+
+      </div>
+
+      <div class="content mx-auto">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <h5 *ngIf="minutes<10" id="chat-timestamp">{{hours}}:0{{minutes}}</h5>
+              <h5 *ngIf="hours>10 && minutes>10" id="chat-timestamp">{{hours}}:{{minutes}}</h5>
+              <div *ngFor="let chat of allData" id="chatbox">
+                <p *ngIf="chat.msg" id="botStarterMessage" class="userText"><span>{{chat.msg}}</span></p>
+                <p *ngIf="chat.msg2" id="botStarterMessage" class="botText"><span>{{chat.msg2}}</span></p>
+
+              </div>
+
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input [(ngModel)]="obj.msg" id="textInput" class=" input-box" type="text"
+                    placeholder="Tap 'Enter' to send a message">
+                </div>
+
+                <div class="chat-bar-icons">
+                  <button class="btn"> <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"></i>
+                  </button>
+                  <button (click)="send()" class="btn"><i id="chat-icon" class="fas fa-paper-plane"
+                      style="color: #333;"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div class="home">
+  <h1 class=" text-center display-4">
+    <span class="NIS">List</span> <span class="home-banner">of Tables</span>
+  </h1>
+  <div class="container col-xl-6 col-md-12 mt-5">
+    <div class="card">
+      <div class="card-body">
+        <table style="background-color: rgb(255, 255, 190);" class="table table-light">
+          <tr>
+            <th>Teacher</th>
+            <th>Subject</th>
+            <th>from</th>
+            <th>to</th>
+          </tr>
+          <tr *ngFor="let table of allData">
+            <th> {{table.name}} </th>
+            <th> {{table.subject}} </th>
+            <th> {{table.time1}}</th>
+            <th> {{table.time2}}</th>
+            <th><button (click)="remove(table.id)" class="btn btn-danger">Delete</button></th>
+            <th><button routerLink="{{table.id}}" class="btn btn-info">Edit</button></th>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
